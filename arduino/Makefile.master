@@ -268,3 +268,5 @@ monitor :
 upload_monitor : upload monitor
 
 -include $(wildcard $(BUILD_DIR)/*.dep))
+
+# vim: set ft=make:
