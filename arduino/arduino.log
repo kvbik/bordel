@@ -1,0 +1,33 @@
+
+avr-g++ -c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp -o/tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.o 
+avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/wiring_analog.c -o/tmp/build8713963024607819261.tmp/wiring_analog.c.o 
+avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/wiring_pulse.c -o/tmp/build8713963024607819261.tmp/wiring_pulse.c.o 
+avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/wiring_shift.c -o/tmp/build8713963024607819261.tmp/wiring_shift.c.o 
+avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/wiring.c -o/tmp/build8713963024607819261.tmp/wiring.c.o 
+avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/pins_arduino.c -o/tmp/build8713963024607819261.tmp/pins_arduino.c.o 
+avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/wiring_digital.c -o/tmp/build8713963024607819261.tmp/wiring_digital.c.o 
+avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/WInterrupts.c -o/tmp/build8713963024607819261.tmp/WInterrupts.c.o 
+avr-g++ -c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/WMath.cpp -o/tmp/build8713963024607819261.tmp/WMath.cpp.o 
+avr-g++ -c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/main.cpp -o/tmp/build8713963024607819261.tmp/main.cpp.o 
+avr-g++ -c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/Tone.cpp -o/tmp/build8713963024607819261.tmp/Tone.cpp.o 
+avr-g++ -c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/Print.cpp -o/tmp/build8713963024607819261.tmp/Print.cpp.o 
+avr-g++ -c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/WString.cpp -o/tmp/build8713963024607819261.tmp/WString.cpp.o 
+avr-g++ -c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/HardwareSerial.cpp -o/tmp/build8713963024607819261.tmp/HardwareSerial.cpp.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/wiring_analog.c.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/wiring_pulse.c.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/wiring_shift.c.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/wiring.c.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/pins_arduino.c.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/wiring_digital.c.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/WInterrupts.c.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/WMath.cpp.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/main.cpp.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/Tone.cpp.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/Print.cpp.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/WString.cpp.o 
+avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build8713963024607819261.tmp/HardwareSerial.cpp.o 
+avr-gcc -Os -Wl,--gc-sections -mmcu=atmega328p -o /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.elf /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.o /tmp/build8713963024607819261.tmp/core.a -L/tmp/build8713963024607819261.tmp -lm 
+avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.elf /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.eep 
+avr-objcopy -O ihex -R .eeprom /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.elf /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.hex 
+Binary sketch size: 992 bytes (of a 30720 byte maximum)
+
