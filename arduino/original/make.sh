@@ -1,6 +1,7 @@
 #!/bin/bash
 
 MCU=atmega328p
+SKETCH=Blink
 SKETCH=BlinkWithoutDelay
 ARDUINO=/usr/share/arduino/hardware/arduino/cores/arduino
 PORT=/dev/ttyUSB0
@@ -16,10 +17,10 @@ OBJCOPYFLAGS2="-O ihex -R .eeprom"
 
 AVRDUDE=/usr/share/arduino/hardware/tools/avrdude
 AVRDUDE_CONF=/usr/share/arduino/hardware/tools/avrdude.conf
-AVRDUDE_PROGRAMMER=stk500
-AVRDUDE_WRITE_FLASH="-U flash:w:$SKETCH.hex"
-UPLOAD_RATE=19200
-AVRDUDE_FLAGS="-F -p $MCU -P $PORT -c $AVRDUDE_PROGRAMMER -b $UPLOAD_RATE -C $AVRDUDE_CONF"
+AVRDUDE_PROGRAMMER=stk500v1
+AVRDUDE_WRITE_FLASH="-U flash:w:$SKETCH.hex:i"
+UPLOAD_RATE=57600
+AVRDUDE_FLAGS="-F -v -p $MCU -P $PORT -c $AVRDUDE_PROGRAMMER -b $UPLOAD_RATE -C $AVRDUDE_CONF"
 
 
 mkdir -p build
