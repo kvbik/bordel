@@ -11,7 +11,11 @@ def grouper(iterable, n, fillvalue=None):
     (('A', 'B', 'C'), ('D', 'E', 'F'), ('G', 'x', 'x'))
     '''
     args = [iter(iterable)] * n
-    return itertools.izip_longest(*args, fillvalue=fillvalue)
+    if hasattr(itertools, 'izip_longest'):
+        zip_longest = itertools.izip_longest
+    else:
+        zip_longest = itertools.zip_longest
+    return zip_longest(*args, fillvalue=fillvalue)
 
 
 if __name__ == '__main__':
