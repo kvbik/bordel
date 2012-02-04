@@ -1,0 +1,355 @@
+
+# log file from arduino software v1.0 build process
+
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp -o/tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.o
+
+#	BlinkWithoutDelay.cpp: In function 'void loop()':
+#	BlinkWithoutDelay.cpp:54:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+
+avr-gcc -c -g -Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/wiring_analog.c -o/tmp/build254558300239322114.tmp/wiring_analog.c.o
+
+#	/usr/share/arduino/hardware/arduino/cores/arduino/wiring_analog.c: In function 'analogWrite':
+#	/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:133:30: warning: uninitialized variable 'digital_pin_to_timer_PGM' put into program memory area [-Wuninitialized]
+
+avr-gcc -c -g -Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/wiring_pulse.c -o/tmp/build254558300239322114.tmp/wiring_pulse.c.o
+
+#	/usr/share/arduino/hardware/arduino/cores/arduino/wiring_pulse.c: In function 'pulseIn':
+#	/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:132:30: warning: uninitialized variable 'digital_pin_to_bit_mask_PGM' put into program memory area [-Wuninitialized]
+#	/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:130:30: warning: uninitialized variable 'digital_pin_to_port_PGM' put into program memory area [-Wuninitialized]
+#	/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:127:31: warning: uninitialized variable 'port_to_input_PGM' put into program memory area [-Wuninitialized]
+
+avr-gcc -c -g -Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/wiring_shift.c -o/tmp/build254558300239322114.tmp/wiring_shift.c.o
+avr-gcc -c -g -Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/wiring.c -o/tmp/build254558300239322114.tmp/wiring.c.o
+avr-gcc -c -g -Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/wiring_digital.c -o/tmp/build254558300239322114.tmp/wiring_digital.c.o
+avr-gcc -c -g -Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/WInterrupts.c -o/tmp/build254558300239322114.tmp/WInterrupts.c.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/WMath.cpp -o/tmp/build254558300239322114.tmp/WMath.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/USBCore.cpp -o/tmp/build254558300239322114.tmp/USBCore.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/main.cpp -o/tmp/build254558300239322114.tmp/main.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.cpp -o/tmp/build254558300239322114.tmp/IPAddress.cpp.o
+
+#	In file included from /usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.cpp:3:0:
+#	/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function 'IPAddress::operator uint32_t()':
+#	/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+#	/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h: In member function 'bool IPAddress::operator==(const IPAddress&)':
+#	/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+#	/usr/share/arduino/hardware/arduino/cores/arduino/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/Tone.cpp -o/tmp/build254558300239322114.tmp/Tone.cpp.o
+
+#	/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h: In function 'void tone(uint8_t, unsigned int, long unsigned int)':
+#	/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:130:30: warning: uninitialized variable 'digital_pin_to_port_PGM' put into program memory area [-Wuninitialized]
+#	/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:128:31: warning: uninitialized variable 'port_to_output_PGM' put into program memory area [-Wuninitialized]
+#	/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h:132:30: warning: uninitialized variable 'digital_pin_to_bit_mask_PGM' put into program memory area [-Wuninitialized]
+
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/new.cpp -o/tmp/build254558300239322114.tmp/new.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/Stream.cpp -o/tmp/build254558300239322114.tmp/Stream.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/HID.cpp -o/tmp/build254558300239322114.tmp/HID.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/Print.cpp -o/tmp/build254558300239322114.tmp/Print.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/WString.cpp -o/tmp/build254558300239322114.tmp/WString.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/CDC.cpp -o/tmp/build254558300239322114.tmp/CDC.cpp.o
+avr-g++ -c -g -Os -Wall -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=100 -I/usr/share/arduino/hardware/arduino/cores/arduino -I/usr/share/arduino/hardware/arduino/variants/standard /usr/share/arduino/hardware/arduino/cores/arduino/HardwareSerial.cpp -o/tmp/build254558300239322114.tmp/HardwareSerial.cpp.o
+
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/wiring_analog.c.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/wiring_pulse.c.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/wiring_shift.c.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/wiring.c.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/wiring_digital.c.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/WInterrupts.c.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/WMath.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/USBCore.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/main.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/IPAddress.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/Tone.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/new.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/Stream.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/HID.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/Print.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/WString.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/CDC.cpp.o
+avr-ar rcs /tmp/build254558300239322114.tmp/core.a /tmp/build254558300239322114.tmp/HardwareSerial.cpp.o
+
+avr-gcc -Os -Wl,--gc-sections -mmcu=atmega328p -o /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.elf /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.o /tmp/build254558300239322114.tmp/core.a -L/tmp/build254558300239322114.tmp -lm
+
+avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.elf /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.eep
+avr-objcopy -O ihex -R .eeprom /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.elf /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.hex
+
+#	Binary sketch size: 1000 bytes (of a 30720 byte maximum)
+
+/usr/share/arduino/hardware/tools/avrdude -C/usr/share/arduino/hardware/tools/avrdude.conf -v -v -v -v -patmega328p -carduino -P/dev/ttyUSB0 -b57600 -D -Uflash:w:/tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.hex:i
+
+#	avrdude: Version 5.11, compiled on Sep  9 2011 at 16:00:41
+#		 Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+#		 Copyright (c) 2007-2009 Joerg Wunsch
+
+#		 System wide configuration file is "/usr/share/arduino/hardware/tools/avrdude.conf"
+#		 User configuration file is "/home/kvbik/.avrduderc"
+#		 User configuration file does not exist or is not a regular file, skipping
+
+#		 Using Port                    : /dev/ttyUSB0
+#		 Using Programmer              : arduino
+#		 Overriding Baud Rate          : 57600
+#	avrdude: Send: 0 [30]   [20]
+#	avrdude: Send: 0 [30]   [20]
+#	avrdude: Send: 0 [30]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#		 AVR Part                      : ATMEGA328P
+#		 Chip Erase delay              : 9000 us
+#		 PAGEL                         : PD7
+#		 BS2                           : PC2
+#		 RESET disposition             : dedicated
+#		 RETRY pulse                   : SCK
+#		 serial program mode           : yes
+#		 parallel program mode         : yes
+#		 Timeout                       : 200
+#		 StabDelay                     : 100
+#		 CmdexeDelay                   : 25
+#		 SyncLoops                     : 32
+#		 ByteDelay                     : 0
+#		 PollIndex                     : 3
+#		 PollValue                     : 0x53
+#		 Memory Detail                 :
+
+#					  Block Poll               Page                       Polled
+#		   Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+#		   ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+#		   eeprom        65    20     4    0 no       1024    4      0  3600  3600 0xff 0xff
+#					  Block Poll               Page                       Polled
+#		   Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+#		   ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+#		   flash         65     6   128    0 yes     32768  128    256  4500  4500 0xff 0xff
+#					  Block Poll               Page                       Polled
+#		   Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+#		   ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+#		   lfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+#					  Block Poll               Page                       Polled
+#		   Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+#		   ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+#		   hfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+#					  Block Poll               Page                       Polled
+#		   Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+#		   ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+#		   efuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+#					  Block Poll               Page                       Polled
+#		   Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+#		   ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+#		   lock           0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+#					  Block Poll               Page                       Polled
+#		   Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+#		   ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+#		   calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+#					  Block Poll               Page                       Polled
+#		   Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+#		   ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+#		   signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+
+#		 Programmer Type : Arduino
+#		 Description     : Arduino
+#	avrdude: Send: A [41] . [80]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [02]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: A [41] . [81]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [01]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: A [41] . [82]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: A [41] . [98]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [03]
+#	avrdude: Recv: . [10]
+#		 Hardware Version: 2
+#		 Firmware Version: 1.16
+#	avrdude: Send: A [41] . [84]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: A [41] . [85]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: A [41] . [86]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: A [41] . [87]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: A [41] . [89]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#		 Vtarget         : 0.0 V
+#		 Varef           : 0.0 V
+#		 Oscillator      : Off
+#		 SCK period      : 0.1 us
+
+#	avrdude: Send: A [41] . [81]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [01]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: A [41] . [82]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: B [42] . [86] . [00] . [00] . [01] . [01] . [01] . [01] . [03] . [ff] . [ff] . [ff] . [ff] . [00] . [80] . [04] . [00] . [00] . [00] . [80] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: E [45] . [05] . [04] . [d7] . [c2] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: P [50]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: AVR device initialized and ready to accept instructions
+
+#	Reading | avrdude: Send: u [75]   [20]
+#	avrdude: Recv: . [14] . [1e] . [95] . [0f] . [10]
+#	################################################## | 100% 0.00s
+
+#	avrdude: Device signature = 0x1e950f
+#	avrdude: Send: V [56] . [a0] . [03] . [fc] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: V [56] . [a0] . [03] . [fd] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: V [56] . [a0] . [03] . [fe] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: V [56] . [a0] . [03] . [ff] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [00]
+#	avrdude: Recv: . [10]
+#	avrdude: reading input file "/tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.hex"
+#	avrdude: writing flash (1000 bytes):
+
+#	Writing | avrdude: Send: U [55] . [00] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: d [64] . [00] . [80] F [46] . [0c] . [94] a [61] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] . [c7] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [00] . [00] . [00] . [07] . [00] . [02] . [01] . [00] . [00] . [03] . [04] . [06] . [00] . [00] . [00] . [00] . [00] . [00] . [00] . [00] . [01] . [02] . [04] . [08]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] @ [40] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: d [64] . [00] . [80] F [46] . [10]   [20] @ [40] . [80] . [01] . [02] . [04] . [08] . [10]   [20] . [01] . [02] . [04] . [08] . [10]   [20] . [04] . [04] . [04] . [04] . [04] . [04] . [04] . [04] . [02] . [02] . [02] . [02] . [02] . [02] . [03] . [03] . [03] . [03] . [03] . [03] . [00] . [00] . [00] . [00] # [23] . [00] & [26] . [00] ) [29] . [00] . [00] . [00] . [00] . [00] % [25] . [00] ( [28] . [00] + [2b] . [00] . [00] . [00] . [00] . [00] $ [24] . [00] ' [27] . [00] * [2a] . [00] . [11] $ [24] . [1f] . [be] . [cf] . [ef] . [d8] . [e0] . [de] . [bf] . [cd] . [bf] . [11] . [e0] . [a0] . [e0] . [b1] . [e0] . [e4] . [ee] . [f3] . [e0] . [02] . [c0] . [05] . [90] . [0d] . [92] . [a4] 0 [30] . [b1] . [07] . [d9] . [f7] . [11] . [e0] . [a4] . [e0] . [b1] . [e0] . [01] . [c0] . [1d] . [92] . [a3] 1 [31] . [b1] . [07] . [e1] . [f7] . [0e] . [94] . [e3] . [01] . [0c] . [94] . [f0] . [01] . [0c] . [94] . [00] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] . [80] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: d [64] . [00] . [80] F [46] . [8d] . [e0] a [61] . [e0] . [0e] . [94] . [8b] . [01] . [08] . [95] . [0f] . [93] . [1f] . [93] . [0e] . [94] . [11] . [01] . [dc] . [01] . [cb] . [01] @ [40] . [91] . [04] . [01] P [50] . [91] . [05] . [01] ` [60] . [91] . [06] . [01] p [70] . [91] . [07] . [01] . [8c] . [01] . [9d] . [01] . [04] . [1b] . [15] . [0b] & [26] . [0b] 7 [37] . [0b] @ [40] . [91] . [00] . [01] P [50] . [91] . [01] . [01] ` [60] . [91] . [02] . [01] p [70] . [91] . [03] . [01] @ [40] . [17] Q [51] . [07] b [62] . [07] s [73] . [07] . [f0] . [f4] . [80] . [93] . [04] . [01] . [90] . [93] . [05] . [01] . [a0] . [93] . [06] . [01] . [b0] . [93] . [07] . [01] . [80] . [91] . [08] . [01] . [90] . [91] . [09] . [01] . [00] . [97] 9 [39] . [f4] . [81] . [e0] . [90] . [e0] . [90] . [93] . [09] . [01] . [80] . [93] . [08] . [01] . [04] . [c0] . [10] . [92] . [09] . [01] . [10] . [92] . [08] . [01] . [8d] . [e0]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	#######avrdude: Send: U [55] . [c0] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: d [64] . [00] . [80] F [46] ` [60] . [91] . [08] . [01] . [0e] . [94] . [ac] . [01] . [1f] . [91] . [0f] . [91] . [08] . [95] . [1f] . [92] . [0f] . [92] . [0f] . [b6] . [0f] . [92] . [11] $ [24] / [2f] . [93] ? [3f] . [93] . [8f] . [93] . [9f] . [93] . [af] . [93] . [bf] . [93] . [80] . [91] . [0a] . [01] . [90] . [91] . [0b] . [01] . [a0] . [91] . [0c] . [01] . [b0] . [91] . [0d] . [01] 0 [30] . [91] . [12] . [01] # [23] / [2f] - [2d] _ [5f] - [2d] 7 [37]   [20] . [f4] . [01] . [96] . [a1] . [1d] . [b1] . [1d] . [05] . [c0] # [23] / [2f] * [2a] W [57] . [02] . [96] . [a1] . [1d] . [b1] . [1d]   [20] . [93] . [12] . [01] . [80] . [93] . [0a] . [01] . [90] . [93] . [0b] . [01] . [a0] . [93] . [0c] . [01] . [b0] . [93] . [0d] . [01] . [80] . [91] . [0e] . [01] . [90] . [91] . [0f] . [01] . [a0] . [91] . [10] . [01] . [b0] . [91] . [11] . [01] . [01] . [96] . [a1] . [1d] . [b1] . [1d] . [80] . [93] . [0e] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] . [00] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: d [64] . [00] . [80] F [46] . [90] . [93] . [0f] . [01] . [a0] . [93] . [10] . [01] . [b0] . [93] . [11] . [01] . [bf] . [91] . [af] . [91] . [9f] . [91] . [8f] . [91] ? [3f] . [91] / [2f] . [91] . [0f] . [90] . [0f] . [be] . [0f] . [90] . [1f] . [90] . [18] . [95] . [0f] . [93] . [1f] . [93] . [8f] . [b7] . [f8] . [94] . [00] . [91] . [0a] . [01] . [10] . [91] . [0b] . [01]   [20] . [91] . [0c] . [01] 0 [30] . [91] . [0d] . [01] . [8f] . [bf] . [b8] . [01] . [c9] . [01] . [1f] . [91] . [0f] . [91] . [08] . [95] x [78] . [94] . [84] . [b5] . [82] ` [60] . [84] . [bd] . [84] . [b5] . [81] ` [60] . [84] . [bd] . [85] . [b5] . [82] ` [60] . [85] . [bd] . [85] . [b5] . [81] ` [60] . [85] . [bd] . [ee] . [e6] . [f0] . [e0] . [80] . [81] . [81] ` [60] . [80] . [83] . [e1] . [e8] . [f0] . [e0] . [10] . [82] . [80] . [81] . [82] ` [60] . [80] . [83] . [80] . [81] . [81] ` [60] . [80] . [83] . [e0] . [e8] . [f0] . [e0]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	#######avrdude: Send: U [55] @ [40] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: d [64] . [00] . [80] F [46] . [80] . [81] . [81] ` [60] . [80] . [83] . [e1] . [eb] . [f0] . [e0] . [80] . [81] . [84] ` [60] . [80] . [83] . [e0] . [eb] . [f0] . [e0] . [80] . [81] . [81] ` [60] . [80] . [83] . [ea] . [e7] . [f0] . [e0] . [80] . [81] . [84] ` [60] . [80] . [83] . [80] . [81] . [82] ` [60] . [80] . [83] . [80] . [81] . [81] ` [60] . [80] . [83] . [80] . [81] . [80] h [68] . [80] . [83] . [10] . [92] . [c1] . [00] . [08] . [95] . [83] 0 [30] q [71] . [f0] . [84] 0 [30] ( [28] . [f4] . [81] 0 [30] . [a1] . [f0] . [82] 0 [30] ! [21] . [f5] . [14] . [c0] . [86] 0 [30] . [b1] . [f0] . [87] 0 [30] . [d1] . [f0] . [84] 0 [30] . [e9] . [f4] . [04] . [c0] . [80] . [91] . [80] . [00] . [8f] w [77] . [03] . [c0] . [80] . [91] . [80] . [00] . [8f] } [7d] . [80] . [93] . [80] . [00] . [08] . [95] . [84] . [b5] . [8f] w [77] . [02] . [c0] . [84] . [b5] . [8f] } [7d] . [84] . [bd] . [08] . [95] . [80] . [91]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] . [80] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: d [64] . [00] . [80] F [46] . [b0] . [00] . [8f] w [77] . [80] . [93] . [b0] . [00] . [08] . [95] . [80] . [91] . [b0] . [00] . [8f] } [7d] . [80] . [93] . [b0] . [00] . [08] . [95] . [90] . [e0] . [fc] . [01] . [e4] X [58] . [ff] O [4f] $ [24] . [91] . [fc] . [01] . [e0] W [57] . [ff] O [4f] . [e4] . [91] . [ee] # [23] . [a9] . [f0] . [f0] . [e0] . [ee] . [0f] . [ff] . [1f] . [e8] T [54] . [ff] O [4f] . [85] . [91] . [94] . [91] . [dc] . [01] . [9f] . [b7] . [f8] . [94] . [8c] . [91] f [66] # [23] ) [29] . [f4]   [20] . [95] . [82] # [23] . [8c] . [93] . [9f] . [bf] . [08] . [95] . [82] + [2b] . [8c] . [93] . [9f] . [bf] . [08] . [95] . [0f] . [93] . [1f] . [93] . [cf] . [93] . [df] . [93] . [0f] . [92] . [cd] . [b7] . [de] . [b7] ( [28] / [2f] 0 [30] . [e0] . [f9] . [01] . [e8] Y [59] . [ff] O [4f] . [84] . [91] . [f9] . [01] . [e4] X [58] . [ff] O [4f] . [14] . [91] . [f9] . [01] . [e0] W [57] . [ff] O [4f]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] . [c0] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: d [64] . [00] h [68] F [46] . [04] . [91] . [00] # [23] . [d1] . [f0] . [88] # [23] ! [21] . [f0] i [69] . [83] . [0e] . [94] ^ [5e] . [01] i [69] . [81] . [e0] / [2f] . [f0] . [e0] . [ee] . [0f] . [ff] . [1f] . [e2] U [55] . [ff] O [4f] . [85] . [91] . [94] . [91] . [dc] . [01] . [9f] . [b7] . [f8] . [94] . [8c] . [91] f [66] # [23] . [19] . [f4] . [10] . [95] . [81] # [23] . [01] . [c0] . [81] + [2b] . [8c] . [93] . [9f] . [bf] . [0f] . [90] . [df] . [91] . [cf] . [91] . [1f] . [91] . [0f] . [91] . [08] . [95] . [0e] . [94] # [23] . [01] . [0e] . [94] . [80] . [00] . [c0] . [e0] . [d0] . [e0] . [0e] . [94] . [85] . [00]   [20] . [97] . [e1] . [f3] . [0e] . [94] . [00] . [00] . [f9] . [cf] . [f8] . [94] . [ff] . [cf] . [e8] . [03] . [00] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	###### | 100% 0.31s
+
+#	avrdude: 1000 bytes of flash written
+#	avrdude: verifying flash memory against /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.hex:
+#	avrdude: load data flash data from input file /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.hex:
+#	avrdude: input file /tmp/build254558300239322114.tmp/BlinkWithoutDelay.cpp.hex contains 1000 bytes
+#	avrdude: reading on-chip flash data:
+
+#	Reading | avrdude: Send: U [55] . [00] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: t [74] . [00] . [80] F [46]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [0c] . [94] a [61] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] . [c7] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [0c] . [94] ~ [7e] . [00] . [00] . [00] . [00] . [07] . [00] . [02] . [01] . [00] . [00] . [03] . [04] . [06] . [00] . [00] . [00] . [00] . [00] . [00] . [00] . [00] . [01] . [02] . [04] . [08]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] @ [40] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: t [74] . [00] . [80] F [46]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]   [20] @ [40] . [80] . [01] . [02] . [04] . [08] . [10]   [20] . [01] . [02] . [04] . [08] . [10]   [20] . [04] . [04] . [04] . [04] . [04] . [04] . [04] . [04] . [02] . [02] . [02] . [02] . [02] . [02] . [03] . [03] . [03] . [03] . [03] . [03] . [00] . [00] . [00] . [00] # [23] . [00] & [26] . [00] ) [29] . [00] . [00] . [00] . [00] . [00] % [25] . [00] ( [28] . [00] + [2b] . [00] . [00] . [00] . [00] . [00] $ [24] . [00] ' [27] . [00] * [2a] . [00] . [11] $ [24] . [1f] . [be] . [cf] . [ef] . [d8] . [e0] . [de] . [bf] . [cd] . [bf] . [11] . [e0] . [a0] . [e0] . [b1] . [e0] . [e4] . [ee] . [f3] . [e0] . [02] . [c0] . [05] . [90] . [0d] . [92] . [a4] 0 [30] . [b1] . [07] . [d9] . [f7] . [11] . [e0] . [a4] . [e0] . [b1] . [e0] . [01] . [c0] . [1d] . [92] . [a3] 1 [31] . [b1] . [07] . [e1] . [f7] . [0e] . [94] . [e3] . [01] . [0c] . [94] . [f0] . [01] . [0c] . [94] . [00] . [00]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] . [80] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: t [74] . [00] . [80] F [46]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [8d] . [e0] a [61] . [e0] . [0e] . [94] . [8b] . [01] . [08] . [95] . [0f] . [93] . [1f] . [93] . [0e] . [94] . [11] . [01] . [dc] . [01] . [cb] . [01] @ [40] . [91] . [04] . [01] P [50] . [91] . [05] . [01] ` [60] . [91] . [06] . [01] p [70] . [91] . [07] . [01] . [8c] . [01] . [9d] . [01] . [04] . [1b] . [15] . [0b] & [26] . [0b] 7 [37] . [0b] @ [40] . [91] . [00] . [01] P [50] . [91] . [01] . [01] ` [60] . [91] . [02] . [01] p [70] . [91] . [03] . [01] @ [40] . [17] Q [51] . [07] b [62] . [07] s [73] . [07] . [f0] . [f4] . [80] . [93] . [04] . [01] . [90] . [93] . [05] . [01] . [a0] . [93] . [06] . [01] . [b0] . [93] . [07] . [01] . [80] . [91] . [08] . [01] . [90] . [91] . [09] . [01] . [00] . [97] 9 [39] . [f4] . [81] . [e0] . [90] . [e0] . [90] . [93] . [09] . [01] . [80] . [93] . [08] . [01] . [04] . [c0] . [10] . [92] . [09] . [01] . [10] . [92] . [08] . [01] . [8d] . [e0]
+#	avrdude: Recv: . [10]
+#	#######avrdude: Send: U [55] . [c0] . [00]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: t [74] . [00] . [80] F [46]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: ` [60] . [91] . [08] . [01] . [0e] . [94] . [ac] . [01] . [1f] . [91] . [0f] . [91] . [08] . [95] . [1f] . [92] . [0f] . [92] . [0f] . [b6] . [0f] . [92] . [11] $ [24] / [2f] . [93] ? [3f] . [93] . [8f] . [93] . [9f] . [93] . [af] . [93] . [bf] . [93] . [80] . [91] . [0a] . [01] . [90] . [91] . [0b] . [01] . [a0] . [91] . [0c] . [01] . [b0] . [91] . [0d] . [01] 0 [30] . [91] . [12] . [01] # [23] / [2f] - [2d] _ [5f] - [2d] 7 [37]   [20] . [f4] . [01] . [96] . [a1] . [1d] . [b1] . [1d] . [05] . [c0] # [23] / [2f] * [2a] W [57] . [02] . [96] . [a1] . [1d] . [b1] . [1d]   [20] . [93] . [12] . [01] . [80] . [93] . [0a] . [01] . [90] . [93] . [0b] . [01] . [a0] . [93] . [0c] . [01] . [b0] . [93] . [0d] . [01] . [80] . [91] . [0e] . [01] . [90] . [91] . [0f] . [01] . [a0] . [91] . [10] . [01] . [b0] . [91] . [11] . [01] . [01] . [96] . [a1] . [1d] . [b1] . [1d] . [80] . [93] . [0e] . [01]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] . [00] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: t [74] . [00] . [80] F [46]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [90] . [93] . [0f] . [01] . [a0] . [93] . [10] . [01] . [b0] . [93] . [11] . [01] . [bf] . [91] . [af] . [91] . [9f] . [91] . [8f] . [91] ? [3f] . [91] / [2f] . [91] . [0f] . [90] . [0f] . [be] . [0f] . [90] . [1f] . [90] . [18] . [95] . [0f] . [93] . [1f] . [93] . [8f] . [b7] . [f8] . [94] . [00] . [91] . [0a] . [01] . [10] . [91] . [0b] . [01]   [20] . [91] . [0c] . [01] 0 [30] . [91] . [0d] . [01] . [8f] . [bf] . [b8] . [01] . [c9] . [01] . [1f] . [91] . [0f] . [91] . [08] . [95] x [78] . [94] . [84] . [b5] . [82] ` [60] . [84] . [bd] . [84] . [b5] . [81] ` [60] . [84] . [bd] . [85] . [b5] . [82] ` [60] . [85] . [bd] . [85] . [b5] . [81] ` [60] . [85] . [bd] . [ee] . [e6] . [f0] . [e0] . [80] . [81] . [81] ` [60] . [80] . [83] . [e1] . [e8] . [f0] . [e0] . [10] . [82] . [80] . [81] . [82] ` [60] . [80] . [83] . [80] . [81] . [81] ` [60] . [80] . [83] . [e0] . [e8] . [f0] . [e0]
+#	avrdude: Recv: . [10]
+#	#######avrdude: Send: U [55] @ [40] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: t [74] . [00] . [80] F [46]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [80] . [81] . [81] ` [60] . [80] . [83] . [e1] . [eb] . [f0] . [e0] . [80] . [81] . [84] ` [60] . [80] . [83] . [e0] . [eb] . [f0] . [e0] . [80] . [81] . [81] ` [60] . [80] . [83] . [ea] . [e7] . [f0] . [e0] . [80] . [81] . [84] ` [60] . [80] . [83] . [80] . [81] . [82] ` [60] . [80] . [83] . [80] . [81] . [81] ` [60] . [80] . [83] . [80] . [81] . [80] h [68] . [80] . [83] . [10] . [92] . [c1] . [00] . [08] . [95] . [83] 0 [30] q [71] . [f0] . [84] 0 [30] ( [28] . [f4] . [81] 0 [30] . [a1] . [f0] . [82] 0 [30] ! [21] . [f5] . [14] . [c0] . [86] 0 [30] . [b1] . [f0] . [87] 0 [30] . [d1] . [f0] . [84] 0 [30] . [e9] . [f4] . [04] . [c0] . [80] . [91] . [80] . [00] . [8f] w [77] . [03] . [c0] . [80] . [91] . [80] . [00] . [8f] } [7d] . [80] . [93] . [80] . [00] . [08] . [95] . [84] . [b5] . [8f] w [77] . [02] . [c0] . [84] . [b5] . [8f] } [7d] . [84] . [bd] . [08] . [95] . [80] . [91]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] . [80] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: t [74] . [00] . [80] F [46]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [b0] . [00] . [8f] w [77] . [80] . [93] . [b0] . [00] . [08] . [95] . [80] . [91] . [b0] . [00] . [8f] } [7d] . [80] . [93] . [b0] . [00] . [08] . [95] . [90] . [e0] . [fc] . [01] . [e4] X [58] . [ff] O [4f] $ [24] . [91] . [fc] . [01] . [e0] W [57] . [ff] O [4f] . [e4] . [91] . [ee] # [23] . [a9] . [f0] . [f0] . [e0] . [ee] . [0f] . [ff] . [1f] . [e8] T [54] . [ff] O [4f] . [85] . [91] . [94] . [91] . [dc] . [01] . [9f] . [b7] . [f8] . [94] . [8c] . [91] f [66] # [23] ) [29] . [f4]   [20] . [95] . [82] # [23] . [8c] . [93] . [9f] . [bf] . [08] . [95] . [82] + [2b] . [8c] . [93] . [9f] . [bf] . [08] . [95] . [0f] . [93] . [1f] . [93] . [cf] . [93] . [df] . [93] . [0f] . [92] . [cd] . [b7] . [de] . [b7] ( [28] / [2f] 0 [30] . [e0] . [f9] . [01] . [e8] Y [59] . [ff] O [4f] . [84] . [91] . [f9] . [01] . [e4] X [58] . [ff] O [4f] . [14] . [91] . [f9] . [01] . [e0] W [57] . [ff] O [4f]
+#	avrdude: Recv: . [10]
+#	######avrdude: Send: U [55] . [c0] . [01]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+#	avrdude: Send: t [74] . [00] h [68] F [46]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [04] . [91] . [00] # [23] . [d1] . [f0] . [88] # [23] ! [21] . [f0] i [69] . [83] . [0e] . [94] ^ [5e] . [01] i [69] . [81] . [e0] / [2f] . [f0] . [e0] . [ee] . [0f] . [ff] . [1f] . [e2] U [55] . [ff] O [4f] . [85] . [91] . [94] . [91] . [dc] . [01] . [9f] . [b7] . [f8] . [94] . [8c] . [91] f [66] # [23] . [19] . [f4] . [10] . [95] . [81] # [23] . [01] . [c0] . [81] + [2b] . [8c] . [93] . [9f] . [bf] . [0f] . [90] . [df] . [91] . [cf] . [91] . [1f] . [91] . [0f] . [91] . [08] . [95] . [0e] . [94] # [23] . [01] . [0e] . [94] . [80] . [00] . [c0] . [e0] . [d0] . [e0] . [0e] . [94] . [85] . [00]   [20] . [97] . [e1] . [f3] . [0e] . [94] . [00] . [00] . [f9] . [cf] . [f8] . [94] . [ff] . [cf] . [e8] . [03] . [00] . [00]
+#	avrdude: Recv: . [10]
+#	###### | 100% 0.25s
+
+#	avrdude: verifying ...
+#	avrdude: 1000 bytes of flash verified
+#	avrdude: Send: Q [51]   [20]
+#	avrdude: Recv: . [14]
+#	avrdude: Recv: . [10]
+
+#	avrdude done.  Thank you.
+
