@@ -1,4 +1,6 @@
 
+# log file from arduino software v0022 build process
+
 avr-g++ -c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp -o/tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.o 
 avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/wiring_analog.c -o/tmp/build8713963024607819261.tmp/wiring_analog.c.o 
 avr-gcc -c -g -Os -w -ffunction-sections -fdata-sections -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=22 -I/usr/share/arduino/hardware/arduino/cores/arduino /usr/share/arduino/hardware/arduino/cores/arduino/wiring_pulse.c -o/tmp/build8713963024607819261.tmp/wiring_pulse.c.o 
@@ -29,5 +31,6 @@ avr-ar rcs /tmp/build8713963024607819261.tmp/core.a /tmp/build871396302460781926
 avr-gcc -Os -Wl,--gc-sections -mmcu=atmega328p -o /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.elf /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.o /tmp/build8713963024607819261.tmp/core.a -L/tmp/build8713963024607819261.tmp -lm 
 avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.elf /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.eep 
 avr-objcopy -O ihex -R .eeprom /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.elf /tmp/build8713963024607819261.tmp/BlinkWithoutDelay.cpp.hex 
-Binary sketch size: 992 bytes (of a 30720 byte maximum)
+
+#	Binary sketch size: 992 bytes (of a 30720 byte maximum)
 

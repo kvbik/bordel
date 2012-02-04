@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# build script for arduino software v0022 rewritten from the log file
+
 MCU=atmega328p
 SKETCH=Blink
 SKETCH=BlinkWithoutDelay
