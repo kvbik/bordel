@@ -1,4 +1,7 @@
 
+# download all videos from given playlist url and create simple playlist txt file
+# .. you need to have youtube-dl in your ~/bin directory
+
 [[ $1 ]] && PLAYLIST_URL="$1" || exit
 PLAYLIST_ID=$( echo "$PLAYLIST_URL" | tr '&' '\n' | grep '^list' | cut -d= -f2 )
 
