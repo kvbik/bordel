@@ -1,4 +1,9 @@
 
+# Rozdíl odjezdů musí být násobkem NSD
+
+# Problém byl v tom, aby ti nezadali jednu periodu jedno prvočíslo, druhou periodu druhé prvočíslo, rozdíl třetí prvočíslo, oni se potkají za sto let, a ty to budeš počítat
+# brutální metodou tejden.
+
 def f(a, b, d):
     """
     vlak ``a`` vyjede v 0, vlak ``b`` vyjede o ``d`` pozdeji,
@@ -14,12 +19,14 @@ def f(a, b, d):
     60
     >>> f(12, 45, 10)
     -1
+    >>> f(60, 12, 5)
+    -1
     """
     i = 1
     mod = -1
 
     if d and int(b/d) != b/d:
-        # kdyz neni ``b`` delitelne celociselne, zadny nasobek ``a`` ho nedozene
+        # kdyz neni ``b`` delitelne celociselne ``d``, zadny nasobek ``a`` ho nedozene
         # TODO: to je ovsem tezka hypoteza a chtela by matematicky overit
         return mod
 
