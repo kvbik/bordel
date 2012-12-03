@@ -10,10 +10,10 @@ VIDEOS=$( wget -q -O - "https://gdata.youtube.com/feeds/api/playlists/$PLAYLIST_
 YOUTUBE_DL=~/bin/youtube-dl
 
 for v in $VIDEOS; do
-	echo $v | sed 's/.*?v=//; s/$/.flv/'
+	echo $v | sed 's/.*?v=//; s/^/yt-/'
 done > list.$PLAYLIST_ID.txt
 
 for v in $VIDEOS; do
-	$YOUTUBE_DL "$v"
+	$YOUTUBE_DL -o 'yt-%(id)s' "$v"
 done
 
