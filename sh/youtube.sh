@@ -1,6 +1,6 @@
 
-PLAYLIST_URL='http://www.youtube.com/watch?v=SamD72aEfUM&feature=BFa&list=AL94UKMTqg-9BJNPHyG_K32OIF4_rbuWhJ'
-PLAYLIST_ID='AL94UKMTqg-9BJNPHyG_K32OIF4_rbuWhJ'
+[[ $1 ]] && PLAYLIST_URL="$1" || exit
+PLAYLIST_ID=$( echo "$PLAYLIST_URL" | tr '&' '\n' | grep '^list' | cut -d= -f2 )
 
 VIDEOS=$( wget -q -O - "https://gdata.youtube.com/feeds/api/playlists/$PLAYLIST_ID?v=2" | sed 's/>/>\n/g' | grep media:player | cut -d"'" -f2 | cut -d'&' -f1 )
 
