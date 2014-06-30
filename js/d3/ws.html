@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Test</title>
+        <script type="text/javascript" src="d3.v3.js"></script>
+        <style type="text/css">
+.border {
+border: solid 1px black;
+}
+        </style>
+    </head>
+    <body>
+        <h1>grafiky</h1>
+
+        <div id="obrazek" class="border"></div>
+
+        <script type="text/javascript">
+
+var offers = [ ['14/1', 0], ['14/2', 55], ['14/3', 50], ['14/4', 122], ['14/5', 470], ['14/6', 869] ];
+var dataset = offers;
+
+var margin = {top: 20, right: 40, bottom: 30, left: 40},
+        width = 960 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+var xScale = d3.scale.ordinal()
+        .domain(dataset.map(function(d) { return d[0]; }))
+        .rangeRoundBands([0, width], .1);
+var yScale = d3.scale.linear()
+        .domain([0, d3.max(dataset, function(d) { return d[1]; })])
+        .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+        .scale(xScale)
+        .ticks(10);
+
+var yAxis = d3.svg.axis()
+        .scale(yScale)
+        .ticks(10);
+
+var svg = d3.select("#obrazek").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+svg.append("g")
+        .selectAll('bar').data(dataset).enter()
+        .append('rect').style('fill', 'steelblue')
+        .attr("x", function(d) { return xScale(d[0]); })
+        .attr("y", function(d) { return yScale(d[1]); })
+        .attr("width", xScale.rangeBand())
+        .attr("height", function(d) { return height-yScale(d[1]); })
+        ;
+
+svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis.orient("bottom"));
+
+svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis.orient("left"));
+
+svg.append("g")
+        .attr("class", "y axis")
+        .attr("transform", "translate(" + width + ", 0)")
+        .call(yAxis.orient("right"));
+
+        </script>
+    </body>
+</html>
